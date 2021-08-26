@@ -44,3 +44,20 @@ function displayPosts(jsonData) {
         postsContainer.appendChild(div);
     }
 }
+
+// extra: need to know more about this
+function addAPost() {
+    fetch("https://jsonplaceholder.typicode.com/posts", {
+        method: "POST",
+        body: JSON.stringify({
+            title: "New Post",
+            body: "Post's body",
+            userID: 9
+        }),
+        headers: {
+            'Content-type': 'application/json; charset=UTF-8',
+        }
+    })
+    .then(res => res.json())
+    .then(data => console.log(data))
+}
