@@ -5,12 +5,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>API</title>
+    <style>
+      .post {
+        background-color: blueviolet;
+        padding: 10px;
+        margin: 20px;
+        border: 4px solid darkred;
+        border-radius: 15px;
+      }
+    </style>
   </head>
   <body>
     <h2>
       <abbr title="Application Programming Interface">API</abbr> Introduction
     </h2>
     <ul id="users"></ul>
+    <section id="posts"></section>
     <button onclick="loadData()">Load Data</button>
     <button onclick="loadUsers()">Load Users</button>
     <button onclick="loadPosts()">Load Posts</button>
